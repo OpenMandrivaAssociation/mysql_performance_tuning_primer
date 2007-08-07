@@ -3,13 +3,13 @@
 
 Summary:	MySQL Performance Tuning Primer Script
 Name:		mysql_performance_tuning_primer
-Version:	1.2
-Release:	%mkrel 0.r2.1
+Version:	1.3
+Release:	%mkrel 0.r3.1
 Group:		System/Servers
 License:	GPL
 URL:		http://www.day32.com/MySQL/
-Source0:	http://www.day32.com/MySQL/tuning-primer.sh.bz2
-Requires:	MySQL
+Source0:	http://www.day32.com/MySQL/tuning-primer.sh
+Requires:	mysql
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
@@ -36,21 +36,20 @@ compatibly with all versions of MySQL 3.23 and higher (including 5.1).
 
 %setup -q -c -T
 
-bzcat %{SOURCE0} > mysql_performance_tuning_primer
+cp %{SOURCE0} mysql_performance_tuning_primer
 perl -pi -e "s|^#\!/.*|#!/bin/bash|g" mysql_performance_tuning_primer
 
 %build
 
 %install
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
+rm -rf %{buildroot}
 
 install -d %{buildroot}%{_sbindir}
 install -m0755 mysql_performance_tuning_primer %{buildroot}%{_sbindir}/
 
 %clean
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
+rm -rf %{buildroot}
 
 %files
 %defattr(0755,root,root)
 %attr(0755,root,root) %{_sbindir}/mysql_performance_tuning_primer
-
