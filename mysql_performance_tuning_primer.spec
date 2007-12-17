@@ -11,7 +11,6 @@ URL:		http://www.day32.com/MySQL/
 Source0:	http://www.day32.com/MySQL/tuning-primer.sh
 Requires:	mysql
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 This script takes information from "SHOW STATUS LIKE..." and "SHOW VARIABLES
