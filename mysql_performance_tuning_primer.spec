@@ -3,15 +3,15 @@
 
 Summary:	MySQL Performance Tuning Primer Script
 Name:		mysql_performance_tuning_primer
-Version:	1.3
-Release:	%mkrel 0.r3.1
+Version:	1.4
+Release:	%mkrel 0.r2.1
 Group:		System/Servers
 License:	GPL
 URL:		http://www.day32.com/MySQL/
 Source0:	http://www.day32.com/MySQL/tuning-primer.sh
 Requires:	mysql
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This script takes information from "SHOW STATUS LIKE..." and "SHOW VARIABLES
