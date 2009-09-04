@@ -4,7 +4,7 @@
 Summary:	MySQL Performance Tuning Primer Script
 Name:		mysql_performance_tuning_primer
 Version:	1.4
-Release:	%mkrel 0.r2.1
+Release:	%mkrel 0.r2.2
 Group:		System/Servers
 License:	GPL
 URL:		http://www.day32.com/MySQL/
