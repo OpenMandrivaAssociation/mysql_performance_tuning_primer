@@ -53,3 +53,36 @@ rm -rf %{buildroot}
 %files
 %defattr(0755,root,root)
 %attr(0755,root,root) %{_sbindir}/mysql_performance_tuning_primer
+
+
+%changelog
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 1.4-0.r2.3mdv2011.0
++ Revision: 620425
+- the mass rebuild of 2010.0 packages
+
+* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 1.4-0.r2.2mdv2010.0
++ Revision: 430142
+- rebuild
+
+* Mon Aug 11 2008 Oden Eriksson <oeriksson@mandriva.com> 1.4-0.r2.1mdv2009.0
++ Revision: 270777
+- 1.4-r2
+
+* Fri Dec 21 2007 Olivier Blin <oblin@mandriva.com> 1.3-0.r3.1mdv2008.1
++ Revision: 136612
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Tue Aug 07 2007 Oden Eriksson <oeriksson@mandriva.com> 1.3-0.r3.1mdv2008.0
++ Revision: 59817
+- 1.3 r3
+
+
+* Tue May 02 2006 Oden Eriksson <oeriksson@mandriva.com> 1.2-0r2.1mdk
+- new version
+
+* Tue May 02 2006 Oden Eriksson <oeriksson@mandriva.com> 0-1mdk
+- initial Mandriva package
+
