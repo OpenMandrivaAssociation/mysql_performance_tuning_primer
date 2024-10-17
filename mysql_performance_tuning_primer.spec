@@ -7,7 +7,7 @@ Version:	1.4
 Release:	%mkrel 0.r2.3
 Group:		System/Servers
 License:	GPL
-URL:		http://www.day32.com/MySQL/
+URL:		https://www.day32.com/MySQL/
 Source0:	http://www.day32.com/MySQL/tuning-primer.sh
 Requires:	mysql
 BuildArch:	noarch
